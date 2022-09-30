@@ -1,28 +1,21 @@
 ## TBD [Spring Portfolio Starter](https://nighthawkcodingsociety.com/projectsearch/details/Spring%20Portfolio%20Starter)
-Runtime link: TBD https://jportfolio.nighthawkcodingsociety.com/
+Runtime link: https://football.aadit.dev
+### Ideas
+Our idea is to create a fantasy sports(specifically football) website that focuses on presenting stats to users so that they can make decisions about their team. This is something that interests our team because we all like sports, and we play fantasy football, so we decided to base our project around this. 
+
+### Wireframe
+<img width="960" alt="Screen Shot 2022-09-26 at 9 16 24 AM" src="https://user-images.githubusercontent.com/34950822/192328249-8453fa07-16a1-4e89-a896-0acfd934a354.png">
+
+<img width="956" alt="Screen Shot 2022-09-27 at 9 35 43 AM" src="https://user-images.githubusercontent.com/34950822/192584566-5adea451-375e-4650-a03c-e0c9f394b256.png">
+
+<img width="956" alt="Screen Shot 2022-09-27 at 9 35 43 AM" src="https://user-images.githubusercontent.com/50186752/192584990-f55d4173-1ba3-4737-8f74-95fdd1c05ff3.png">
 
 
-
-## Visual thoughts
-#### * Starter code should be fun and practical
-#### * Organize with Bootstrap menu 
-#### * Add some color and fun through VANTA Visuals (birds, halo, solar, net)
-#### * Show some practical and fun links (hrefs) like Twitter, Git, Youtube
-#### * Show student project specific links (hrefs) per page
-#### * Show student TPT ideas
-#### * Show student About me pages
-
-
-
-## Getting started
-#### * Clone project to IntelliJ
-#### * Verify Project Structure to use a good Java JDK (adopt-openJ9-15) 
-#### * Play or entry point is Main.java, look for play option in tray.  This file eanbles Spring to load
-#### * Java source (src/main/java) had Java files.  Find "controllers" path, these files enable HTTP route and HTML file relationship.  Note, html 
-#### * HTML source (src/main/resources) had templates and supporting files.  Find index.html as this file is launched by defaul in Spring.  Other HTML files are loaded by building a "@Controller"
-
-
-
-## IDE management
-#### * A ".gitignore" can teach a Developer a lot about Java runtime.  A target directory is created when you press play button, byte code is generated and files are moved into this location.
-#### * A "pom.xml" file can teach you a lot about Java dependencies.  This is similar to "requirements.txt" file in Python.  It manages packages and dependencies.
+### Features 
+- Player stats
+- Weekly Rankings
+- Season rankings
+- Draft picks
+- Win projections
+- Trade targets
+- Live team standings 
