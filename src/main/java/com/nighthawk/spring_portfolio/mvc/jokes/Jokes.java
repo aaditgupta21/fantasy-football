@@ -13,8 +13,11 @@ import javax.persistence.*;
 public class Jokes {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Long id;
+    private Long id;  // Unique identifier
 
     @Column(unique=true)
-    private String joke;
+    private String joke;  // The Joke
+
+    private int haha;  // Store joke likes
+    private int boohoo;  // Store joke jeers
 }
