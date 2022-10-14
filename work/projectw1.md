@@ -14,19 +14,19 @@ layout: default
 
 ### Describe your Software Development Life Cycle
 
-```html
+```
 
 ```
 
 ### Describe how you plan, track sprints, track features, track milestones, and assign versions.
 
-```html
+```
 
 ```
 
 ### Highlight Agile process: research, design, coding, testing, review, repeat.
 
-```html
+```
 
 ```
 
@@ -35,19 +35,19 @@ layout: default
 
 ### Define Computer Systems you will develop.
 
-```html
+```
 
 ```
 
 ### Indicate Tools or Automation you will use improve tracking requirements.
 
-```html
+```
 
 ```
 
 ### Define strategies that enable Team to target the specific needs of the customer (ie Product Owner)meetings, demos, and collecting feedback.
 
-```html
+```
 
 ```
 
@@ -56,19 +56,19 @@ layout: default
 
 ### Show frontend design artifacts (wire frames)
 
-```html
+```
 
 ```
 
 ### Describe any consideration you have made for customer needs.
 
-```html
+```
 
 ```
 
 ### Indicate accommodations you have made for English Language Learners or those with Disabilities
 
-```html
+```
 
 ```
 
@@ -77,19 +77,19 @@ layout: default
 
 ### Identify authoring tools (IDE’s, Docker) used
 
-```html
+```
 
 ```
 
 ### Describe and/or show visuals which interactions and integration of programming languages, protocols, and data within project (Flow Chart/UML).
 
-```html
+```
 
 ```
 
 ### Describe and/or illustrate key Procedures, Functions, Algorithms that will be required to complete this system (Flow Chart/UML).
 (Be sure to use comments in code to facilitate current and future understanding of the key portions of system.)
-```html
+```
 
 ```
 
@@ -98,19 +98,19 @@ layout: default
 
 ### Identify authoring tools (IDE’s, Postman) used.
 
-```html
+```
 
 ```
 
 ### Describe and/or illustrate key data types, data structures, objects, files, and databases that will be used (Flow Chart/UML).
 
-```html
+```
 
 ```
 
 ### Describe use of database, tables, attributes, records, and systems of access (POJOs, JPAs)
 (Be sure to use comments in code to facilitate current and future understanding of the key portions of data.)
-```html
+```
 
 ```
 
@@ -119,36 +119,36 @@ layout: default
 
 ### Consider using GitHub Issues to support this process.
 
-```html
+```
 
 ```
 
 ### Develop and describe expectations of each feature.
 
-```html
+```
 
 ```
 
 ### Use feature, expected outcome, and the minimal amount of code each feature.
 
-```html
+```
 
 ```
 
 ### Document accomplishment with tangible evidence.
 
-```html
+```
 
 ```
 
 ### Have feature reviews, demos, and obtain feedback (team and/or customer)
 
-```html
+```
 
 ```
 
 ### Update and derive new features and tasks for next step in Software Development Life Cycle
 
-```html
+```
 
 ```
