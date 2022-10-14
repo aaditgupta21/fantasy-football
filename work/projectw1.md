@@ -26,6 +26,7 @@ layout: default
 ```
 
 ### Highlight Agile process: research, design, coding, testing, review, repeat.
+(What is Agile: The agile methodology focuses strongly on user input and experience, which can solve many issues that arose from older applications that were more cumbersome to use. The software, as it moves through the agile process, is very responsive to feedback and works to release software in quicker cycles in order to adhere to a changing and rapid market.)
 
 ```
 
