@@ -231,3 +231,13 @@ Deploying information systems:
 ```
 
 
+# Hacks (Video 1). Recommend… Minimize talking, minimize mouse movements, and share Tangibles.
+(Make a less than 4 minute video. Each individual should talk in video, code, and make their part of the video. Consider crossing over to other tables and share methods and methodologies of those working on similar roles.)
+
+## Scrum Master should make sure all things come together
+## DevOps should ensure there is a working project to Demo at all times.
+## Everyone should complete their part(s).
+## veryone should help other Team Members when struggling.
+(Video link can post below here)
+
+
