@@ -8,14 +8,32 @@ layout: default
   </video>
 </div>
 
-# Project Week 1
+# Project Week 2
+
+# API Frontend to Backend Overview
+(Show demo of work in progress.)
+
+## Must use API across multiple systems
+
+### Create a HTML Frontend table or view fetching from Backend using an Spring API
+
+```
+
+```
+### Show writing to Database
+
+```
+
+```
+
+
+# Scrum Master
+(Describe Program Purpose and Function. Also, highlight key system used to track, collaborate and review software.)
 
 ## Identify and Apply a Software Development process.
-
 ### Describe your Software Development Life Cycle
 (The software development life cycle is a process of planning, creating, testing, and deploying information systems across hardware and software)
 planning: Leaders of the project evaluate the terms of the project, including the calculation of labor and material costs, to create a timetable with goals. Planning must also include areas of feedback from stakeholders or anybody who is going to benefit from the applications. The scope of the project should be clearly defined, the purpose of the application outlined, and the boundaries that are needed to keep the project from expanding beyond scope or shifting.
-
 
 ```
 Planning:
@@ -59,70 +77,6 @@ Deploying information systems:
 
 ```
 
-
-## Create and implement and effective frontend between humans and technology
-
-### Show frontend design artifacts (wire frames)
-
-```
-
-```
-
-### Describe any consideration you have made for customer needs.
-
-```
-
-```
-
-### Indicate accommodations you have made for English Language Learners or those with Disabilities
-
-```
-
-```
-
-
-## Develop software using programming languages
-
-### Identify authoring tools (IDE’s, Docker) used
-
-```
-
-```
-
-### Describe and/or show visuals which interactions and integration of programming languages, protocols, and data within project (Flow Chart/UML).
-
-```
-
-```
-
-### Describe and/or illustrate key Procedures, Functions, Algorithms that will be required to complete this system (Flow Chart/UML).
-(Be sure to use comments in code to facilitate current and future understanding of the key portions of system.)
-```
-
-```
-
-
-## Develop data, data types, databases, and APIs.
-
-### Identify authoring tools (IDE’s, Postman) used.
-
-```
-
-```
-
-### Describe and/or illustrate key data types, data structures, objects, files, and databases that will be used (Flow Chart/UML).
-
-```
-
-```
-
-### Describe use of database, tables, attributes, records, and systems of access (POJOs, JPAs)
-(Be sure to use comments in code to facilitate current and future understanding of the key portions of data.)
-```
-
-```
-
-
 ## Test and Demo Software during each Sprint
 
 ### Consider using GitHub Issues to support this process.
@@ -160,3 +114,120 @@ Deploying information systems:
 ```
 
 ```
+(Mr.M suggestion is this person helps with Frontend development)
+
+# Frontend Developer
+(Describe Frontend designs and coding techniques.)
+
+## Create and implement and effective frontend between humans and technology
+
+### Show frontend design artifacts (wire frames)
+
+```
+
+```
+
+### Describe any consideration you have made for customer needs.
+
+```
+
+```
+
+### Indicate accommodations you have made for English Language Learners or those with Disabilities
+
+```
+
+```
+
+### Show any screens that are currently developed
+
+```
+
+```
+
+## Describe Code and Styles Frontend development
+(Comments. Be sure to illustrate developers comments in code and how this will facilitate current and future understanding of the key portions of system.)
+
+### HTML, Markdown, JavaScript
+```
+
+```
+### Cards, Tables, Blogging
+```
+
+```
+
+# DevOps Engineer
+(Describe the technical systems and processes used to ensure the ability to do continuous updates and integration of software.)
+
+## Describe software and programming tools
+
+### Identify authoring tools (IDE’s, Docker, GitHub) used
+
+```
+
+```
+
+### Describe and/or show visuals of interactions and integration of programming languages, protocols, and data within project. For instance, deployed systems of Docker Images, Nginx, DNS hosting the application.
+
+```
+
+```
+
+### Describe and/or illustrate key Web Applications, APIs, and dependency systems that will be required to complete this system (Diagram).
+```
+
+```
+
+
+## Describe GitHub branch management and sociology used to ensure ability to perform continuous builds and integrations.
+
+### GitHub projects
+
+```
+
+```
+
+### Branching Strategies
+
+```
+
+```
+
+### Deployment processes and automation
+```
+
+```
+
+## Describe how to validate and test the complete system
+```
+
+```
+
+## mr. M suggestion is this person helps with Backend development
+
+# Backend Developer
+(Describe backend coding and requirements.)
+
+## Develop data, data types, databases, and APIs.
+(Comments. Be sure developers use comments in code to facilitate current and future understanding of the key portions of system.)
+
+### Identify authoring tools (IDE’s, Postman) used.
+
+```
+
+```
+
+### Describe and/or illustrate key data types, data structures (Lists, Dictionaries), objects, files, or databases that will be used (Flow Chart/UML).
+
+```
+
+```
+
+### Describe use of Lists or Dictionaries, database, tables, attributes, records, and systems of access (JSON, Lists, Dictionaries).
+
+```
+
+```
+
+
