@@ -120,6 +120,7 @@ Deploying information systems:
 (Describe Frontend designs and coding techniques.)
 
 ## Create and implement and effective frontend between humans and technology
+(Comments. Be sure to illustrate developers comments in code and how this will facilitate current and future understanding of the key portions of system.)
 
 ### Show frontend design artifacts (wire frames)
 
@@ -146,7 +147,6 @@ Deploying information systems:
 ```
 
 ## Describe Code and Styles Frontend development
-(Comments. Be sure to illustrate developers comments in code and how this will facilitate current and future understanding of the key portions of system.)
 
 ### HTML, Markdown, JavaScript
 ```
