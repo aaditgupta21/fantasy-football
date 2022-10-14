@@ -15,12 +15,12 @@ layout: default
 
 ## Must use API across multiple systems
 
-### Create a HTML Frontend table or view fetching from Backend using an Spring API
+### 1. Create a HTML Frontend table or view fetching from Backend using an Spring API
 
 ```
 
 ```
-### Show writing to Database
+### 2, Show writing to Database
 
 ```
 
@@ -31,7 +31,8 @@ layout: default
 (Describe Program Purpose and Function. Also, highlight key system used to track, collaborate and review software.)
 
 ## Identify and Apply a Software Development process.
-### Describe your Software Development Life Cycle
+
+### 1. Describe your Software Development Life Cycle
 (The software development life cycle is a process of planning, creating, testing, and deploying information systems across hardware and software)
 planning: Leaders of the project evaluate the terms of the project, including the calculation of labor and material costs, to create a timetable with goals. Planning must also include areas of feedback from stakeholders or anybody who is going to benefit from the applications. The scope of the project should be clearly defined, the purpose of the application outlined, and the boundaries that are needed to keep the project from expanding beyond scope or shifting.
 
@@ -43,13 +44,13 @@ Deploying information systems:
 
 ```
 
-### Describe how you plan, track sprints, track features, track milestones, and assign versions.
+### 2. Describe how you plan, track sprints, track features, track milestones, and assign versions.
 
 ```
 
 ```
 
-### Highlight Agile process: research, design, coding, testing, review, repeat.
+### 3. Highlight Agile process: research, design, coding, testing, review, repeat.
 (What is Agile: The agile methodology focuses strongly on user input and experience, which can solve many issues that arose from older applications that were more cumbersome to use. The software, as it moves through the agile process, is very responsive to feedback and works to release software in quicker cycles in order to adhere to a changing and rapid market.)
 
 ```
@@ -59,19 +60,19 @@ Deploying information systems:
 
 ## Define and analyze systems and software requirements.
 
-### Define Computer Systems you will develop.
+### 1. Define Computer Systems you will develop.
 
 ```
 
 ```
 
-### Indicate Tools or Automation you will use improve tracking requirements.
+### 2. Indicate Tools or Automation you will use improve tracking requirements.
 
 ```
 
 ```
 
-### Define strategies that enable Team to target the specific needs of the customer (ie Product Owner)meetings, demos, and collecting feedback.
+### 3. Define strategies that enable Team to target the specific needs of the customer (ie Product Owner)meetings, demos, and collecting feedback.
 
 ```
 
@@ -79,37 +80,37 @@ Deploying information systems:
 
 ## Test and Demo Software during each Sprint
 
-### Consider using GitHub Issues to support this process.
+### 1. Consider using GitHub Issues to support this process.
 
 ```
 
 ```
 
-### Develop and describe expectations of each feature.
+### 2. Develop and describe expectations of each feature.
 
 ```
 
 ```
 
-### Use feature, expected outcome, and the minimal amount of code each feature.
+### 3. Use feature, expected outcome, and the minimal amount of code each feature.
 
 ```
 
 ```
 
-### Document accomplishment with tangible evidence.
+### 4. Document accomplishment with tangible evidence.
 
 ```
 
 ```
 
-### Have feature reviews, demos, and obtain feedback (team and/or customer)
+### 5. Have feature reviews, demos, and obtain feedback (team and/or customer)
 
 ```
 
 ```
 
-### Update and derive new features and tasks for next step in Software Development Life Cycle
+### 6. Update and derive new features and tasks for next step in Software Development Life Cycle
 
 ```
 
@@ -122,25 +123,25 @@ Deploying information systems:
 ## Create and implement and effective frontend between humans and technology
 (Comments. Be sure to illustrate developers comments in code and how this will facilitate current and future understanding of the key portions of system.)
 
-### Show frontend design artifacts (wire frames)
+### 1. Show frontend design artifacts (wire frames)
 
 ```
 
 ```
 
-### Describe any consideration you have made for customer needs.
+### 2. Describe any consideration you have made for customer needs.
 
 ```
 
 ```
 
-### Indicate accommodations you have made for English Language Learners or those with Disabilities
+### 3. Indicate accommodations you have made for English Language Learners or those with Disabilities
 
 ```
 
 ```
 
-### Show any screens that are currently developed
+### 4. Show any screens that are currently developed
 
 ```
 
@@ -148,11 +149,11 @@ Deploying information systems:
 
 ## Describe Code and Styles Frontend development
 
-### HTML, Markdown, JavaScript
+### 1. HTML, Markdown, JavaScript
 ```
 
 ```
-### Cards, Tables, Blogging
+### 2. Cards, Tables, Blogging
 ```
 
 ```
@@ -162,19 +163,19 @@ Deploying information systems:
 
 ## Describe software and programming tools
 
-### Identify authoring tools (IDE’s, Docker, GitHub) used
+### 1. Identify authoring tools (IDE’s, Docker, GitHub) used
 
 ```
 
 ```
 
-### Describe and/or show visuals of interactions and integration of programming languages, protocols, and data within project. For instance, deployed systems of Docker Images, Nginx, DNS hosting the application.
+### 2. Describe and/or show visuals of interactions and integration of programming languages, protocols, and data within project. For instance, deployed systems of Docker Images, Nginx, DNS hosting the application.
 
 ```
 
 ```
 
-### Describe and/or illustrate key Web Applications, APIs, and dependency systems that will be required to complete this system (Diagram).
+### 3. Describe and/or illustrate key Web Applications, APIs, and dependency systems that will be required to complete this system (Diagram).
 ```
 
 ```
@@ -182,19 +183,19 @@ Deploying information systems:
 
 ## Describe GitHub branch management and sociology used to ensure ability to perform continuous builds and integrations.
 
-### GitHub projects
+### 1. GitHub projects
 
 ```
 
 ```
 
-### Branching Strategies
+### 2. Branching Strategies
 
 ```
 
 ```
 
-### Deployment processes and automation
+### 3. Deployment processes and automation
 ```
 
 ```
@@ -212,19 +213,19 @@ Deploying information systems:
 ## Develop data, data types, databases, and APIs.
 (Comments. Be sure developers use comments in code to facilitate current and future understanding of the key portions of system.)
 
-### Identify authoring tools (IDE’s, Postman) used.
+### 1. Identify authoring tools (IDE’s, Postman) used.
 
 ```
 
 ```
 
-### Describe and/or illustrate key data types, data structures (Lists, Dictionaries), objects, files, or databases that will be used (Flow Chart/UML).
+### 2. Describe and/or illustrate key data types, data structures (Lists, Dictionaries), objects, files, or databases that will be used (Flow Chart/UML).
 
 ```
 
 ```
 
-### Describe use of Lists or Dictionaries, database, tables, attributes, records, and systems of access (JSON, Lists, Dictionaries).
+### 3. Describe use of Lists or Dictionaries, database, tables, attributes, records, and systems of access (JSON, Lists, Dictionaries).
 
 ```
 
