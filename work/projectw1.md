@@ -13,6 +13,7 @@ layout: default
 ## Identify and Apply a Software Development process.
 
 ### Describe your Software Development Life Cycle
+(The software development life cycle is a process of planning, creating, testing, and deploying information systems across hardware and software)
 
 ```
 
