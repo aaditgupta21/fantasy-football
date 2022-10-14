@@ -14,8 +14,14 @@ layout: default
 
 ### Describe your Software Development Life Cycle
 (The software development life cycle is a process of planning, creating, testing, and deploying information systems across hardware and software)
+planning: Leaders of the project evaluate the terms of the project, including the calculation of labor and material costs, to create a timetable with goals. Planning must also include areas of feedback from stakeholders or anybody who is going to benefit from the applications. The scope of the project should be clearly defined, the purpose of the application outlined, and the boundaries that are needed to keep the project from expanding beyond scope or shifting.
+
 
 ```
+Planning:
+Creating:
+Testing:
+Deploying information systems:
 
 ```
 
