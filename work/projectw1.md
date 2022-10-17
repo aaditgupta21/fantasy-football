@@ -126,19 +126,36 @@ Deploying information systems:
 ### 1. Show frontend design artifacts (wire frames)
 
 ```
-
+wire frames
 ```
+<img width="960" alt="Screen Shot 2022-09-26 at 9 16 24 AM" src="https://user-images.githubusercontent.com/34950822/192328249-8453fa07-16a1-4e89-a896-0acfd934a354.png">
+
+<img width="956" alt="Screen Shot 2022-09-27 at 9 35 43 AM" src="https://user-images.githubusercontent.com/34950822/192584566-5adea451-375e-4650-a03c-e0c9f394b256.png">
+
+<img width="956" alt="Screen Shot 2022-09-27 at 9 35 43 AM" src="https://user-images.githubusercontent.com/50186752/192584990-f55d4173-1ba3-4737-8f74-95fdd1c05ff3.png">
 
 ### 2. Describe any consideration you have made for customer needs.
 
 ```
-
+Based on our website, the goals of all customer who come to our website are all very simple, 
+either want to see the data of sport player or want to see the data of the sport team. 
+So we try to make our page as simple as possible, no ads, no extra image, but only the data and the link to the page.
+For customer who uses our website daily, we decide to make a login system 
+so that the users can create their own account and save their information
+And for the login system, the users who have their own account wIll have an about page, 
+in the page there is a notebook that they can write and save something they want, 
+and in the page they can change the background to a video background by privide a link of video 
+so that each one will have a different page from other.
 ```
 
 ### 3. Indicate accommodations you have made for English Language Learners or those with Disabilities
 
 ```
-
+For English Language Learners, we decide to insert a translator so that they can use it to view our website.
+Now we have two ideas of how to do it based on our ability of technology. one is to insert a button, 
+if the user click the button it will translate the whole page and show in the screen currently, 
+one is to use javascript that if users move their mouse above a word(english) they don't know, 
+then it will Automatically create a small window that shows the definition of the word.
 ```
 
 ### 4. Show any screens that are currently developed
