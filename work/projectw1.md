@@ -159,10 +159,7 @@ then it will Automatically create a small window that shows the definition of th
 ```
 
 ### 4. Show any screens that are currently developed
-
-```
-
-```
+<img width="960" alt="Screen Shot 2022-09-26 at 9 16 24 AM" src="https://github.com/aaditgupta21/fantasy-football/blob/design/images/screen1.png?raw=true">
 
 ## Describe Code and Styles Frontend development
 
