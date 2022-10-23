@@ -13,4 +13,4 @@ volumes:
     driver_opts:
       o: bind
       type: none
-      device: /home/ubuntu/fantasy-football/volumes
+      device: /home/ubuntu/T8086_fantasy_football/volumes
