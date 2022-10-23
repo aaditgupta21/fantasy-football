@@ -165,11 +165,259 @@ then it will Automatically create a small window that shows the definition of th
 
 ### 1. HTML, Markdown, JavaScript
 ```
+1. I create several new pages and link to the four button， and create different java file for each pages and stone into the controllers directory.
+```
+```html
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/base}" lang="en">
 
+<head>
+    <title>Players</title>
+</head>
+
+<body>
+<th:block layout:fragment="body" th:remove="tag">
+    
+
+
+</th:block>
+</body>
+
+</html>
+```
+```java
+package com.nighthawk.spring_portfolio.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+
+@Controller  // HTTP requests are handled as a controller, using the @Controller annotation
+public class players {
+
+    // CONTROLLER handles GET request for /birds, maps it to birds() method
+    @GetMapping("/players")
+    public String players() {
+
+        // load HTML VIEW (birds.html)
+        return "players";
+
+    }
+}
+```
+```
+2. Then I emptied the nav page, and create a new nav for our project
+```
+```html
+<!DOCTYPE html>
+<html lang="en-US">
+<!-- Begin navigation fragments -->
+<th:block xmlns:th="http://www.w3.org/1999/xhtml" xmlns:sec="http://www.thymeleaf.org/extras/spring-security" th:fragment="header">
+    <table style="width:80%; margin-top: 5%; margin-left: 2%;">
+            <tr>
+                <th><a class="nav-link" th:href="@{/}"><button class="button" style="vertical-align:middle"><span>Home</span></button></a></th>
+                <th><a class="nav-link" th:href="@{/players}"><button class="button" style="vertical-align:middle"><span>Players</span></button></a></th>
+                <th><a class="nav-link" th:href="@{/}"><button class="button" style="vertical-align:middle"><span>Standings</span></button></a></th>
+                <th><a class="nav-link" th:href="@{/}"><button class="button" style="vertical-align:middle"><span>League</span></button></a></th>
+                <th><p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p></th>
+                <th><div id="digital-clock"></div></th>
+                <th><input style=" border-radius: 30px;" id="search" type="search" placeholder="Search" aria-label="Search"></th>
+            </tr>
+
+    </table>
+
+            <!-- Navigation bar JavaScript support -->
+            <script>
+                const search = document.getElementById('search');
+                const google = 'https://www.google.com/search?q=site%3A+';
+                const site = 'https://nighthawkcodingsociety.com';
+
+                function submitted(event) {
+                    if (event.key === 'Enter') {
+                        // calculations to determine new window size at 66% of existing
+                        const reduction = 0.66;  // reduce by 66%
+                        const w = Math.trunc(window.innerWidth*reduction);
+                        const h = Math.trunc(window.outerHeight*reduction);
+                        const l = Math.trunc(window.top.screenX + ((window.innerWidth - w)/2));
+                        const t = Math.trunc(window.top.screenY + ((window.outerHeight - h)/2));
+                        const left = "left=" + l;
+                        const top = "top=" + t;
+                        const width = "width=" + w;
+                        const height = "height=" + h;
+                        const location = left + ", " + top + ", " + width + ", " + height
+
+                        // setup and display window
+                        event.preventDefault();
+                        const url = google
+                            + site
+                            + '+'
+                            + search.value;
+                        const win = window.open(url, "CompSci A Search", location);
+                        win.focus();
+                    }
+                }
+                search.addEventListener('keypress', submitted);
+
+            </script>
+                
+</th:block>
+</html>
+```
+
+```
+Also I create a css file and js file so that I can show local timing in the nav and also make video background, etc.
+```
+```css
+#video_wrapper {
+    margin:0px;
+    padding:0px;
+}
+#video_wrapper video {
+    position: fixed;
+    top: 50%; left: 50%;
+    z-index: -99;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+} 
+
+
+table { background: rgba(0,0,0,0.2); }
+tr { background: rgba(0,0,0,0.2); }
+td { background: rgba(0,0,0,0.2); }
+
+.button {
+    display: inline-block;
+    border-radius: 30px; padding: 5px 35px;
+    text-align: center;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+
+
+
+.button span {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+}
+
+.button span:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+.button:hover span {
+padding-right: 25px;
+}
+
+.button:hover span:after {
+opacity: 1;
+right: 0;
+}
+```
+```js
+var l;
+function getDateTime(){
+        var now     = new Date(); 
+        var year    = now.getFullYear();
+        var month   = now.getMonth()+1; 
+        var day     = now.getDate();
+        var hour    = now.getHours();
+        var minute  = now.getMinutes();
+        var second  = now.getSeconds(); 
+        l = hour;
+        if(month.toString().length == 1) {
+             month = '0'+month;
+        }
+        if(day.toString().length == 1) {
+             day = '0'+day;
+        }   
+        if(hour.toString().length == 1) {
+             hour = '0'+hour;
+        }
+        if(minute.toString().length == 1) {
+             minute = '0'+minute;
+        }
+        if(second.toString().length == 1) {
+             second = '0'+second;
+        }   
+        var dateTime = year+'/'+month+'/'+day+' '+hour+':'+minute+':'+second;   
+         return dateTime;
+    }
+    
+    setInterval(function(){
+        currentTime = getDateTime();
+        document.getElementById("digital-clock").innerHTML = currentTime;
+    }, 1000);
+    
+function checking(){
+    var video = document.getElementById("background");
+    if ((l>=0)&&(l<=5)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=17ygkkkTDZb219cgsmglfod33qP8PGW58");
+    }
+    else if((l>=6)&&(l<=9)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=1GV5A1SChf-hhkKheakg01GBd-CjpzlHx");
+    }
+    else if((l>=9)&&(l<=12)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=1BFKYi3db4VSzsVtV6-imY8mhcOxHe-g_");
+    }
+    else if((l>=13)&&(l<=17)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=1w4kUtoqYsylUpLU_g3oI7OtYhhPcQIiM");
+    }
+    else if((l>=18)&&(l<=20)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=10qZhLCMqm_RDj89Jjp8edLKLurSjQmh-");
+    }
+    else if((l>=21)&&(l<=23)){
+        video.setAttribute("src","https://drive.google.com/uc?export=view&id=1IOK35bZ6iM5q4rYxhLmlFwYa3lHjINXR");
+    }        
+}       
+```
+
+```
+3. Then I create the home page
+```
+
+```html
+<!-- This page is illustrative and contains ideas about HTML formatting -->
+<!DOCTYPE HTML>
+<!-- Signals to the Layout Dialect which layout should be used to decorate this View -->
+<html xmlns:layout="http://www.w3.org/1999/xhtml" xmlns:th="http://www.w3.org/1999/xhtml"
+      layout:decorate="~{layouts/base}" lang="en">
+
+<head>
+    <title>Home</title>
+</head>
+
+<body>
+<th:block layout:fragment="body" th:remove="tag">
+    
+<div id="video_wrapper">
+    <video autoplay loop>
+        <source src="https://drive.google.com/uc?export=view&id=1NAyWoJIA8d3SunU8iH2m_9tz2qsHNL3Y" type="video/mp4">
+    </video>
+    <img style="width: 800px; height: auto; margin-top: 3%; margin-left: 3%; border-radius: 5px;
+    box-shadow: 7px 7px 7px #666666;" th:src="@{/images/football.png}" alt="football">
+</div>
+
+
+</th:block>
+</body>
+
+</html>
 ```
 ### 2. Cards, Tables, Blogging
 ```
-
+I don't get it, what is Cards, Tables, Blogging. If the Blogging means to create a github page that stone our team's work then the page you looking at is our blog.
 ```
 
 # DevOps Engineer
