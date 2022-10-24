@@ -1,4 +1,4 @@
-package com.nighthawk.spring_portfolio.mvc.jokes;
+package com.nighthawk.spring_portfolio.mvc.facts;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -9,20 +9,20 @@ import java.util.List;
 import java.util.Optional;
 
 @RestController // annotation to simplify the creation of RESTful web services
-@RequestMapping("/api/jokes")  // all requests in file begin with this URI
-public class JokesApiController {
+@RequestMapping("/api/facts")  // all requests in file begin with this URI
+public class FactsApiController {
 
     // Autowired enables Control to connect URI request and POJO Object to easily for Database CRUD operations
     @Autowired
-    private JokesJpaRepository repository;
+    private FactsJpaRepository repository2;
 
     /* GET List of Jokes
      * @GetMapping annotation is used for mapping HTTP GET requests onto specific handler methods.
      */
     @GetMapping("/")
-    public ResponseEntity<List<Jokes>> getJokes() {
+    public ResponseEntity<List<Facts>> getFacts() {
         // ResponseEntity returns List of Jokes provide by JPA findAll()
-        return new ResponseEntity<>( repository.findAll(), HttpStatus.OK);
+        return new ResponseEntity<>( repository2.findAll(), HttpStatus.OK);
     }
 
     /* Update Like
@@ -30,18 +30,18 @@ public class JokesApiController {
      * @PathVariable annotation extracts the templated part {id}, from the URI
      */
     @PutMapping("/like/{id}")
-    public ResponseEntity<Jokes> setLike(@PathVariable long id) {
+    public ResponseEntity<Facts> setLike(@PathVariable long id) {
         /*
         * Optional (below) is a container object which helps determine if a result is present.
         * If a value is present, isPresent() will return true
         * get() will return the value.
         */
-        Optional<Jokes> optional = repository.findById(id);
+        Optional<Facts> optional = repository2.findById(id);
         if (optional.isPresent()) {  // Good ID
-            Jokes joke = optional.get();  // value from findByID
-            joke.setHaha(joke.getHaha()+1); // increment value
-            repository.save(joke);  // save entity
-            return new ResponseEntity<>(joke, HttpStatus.OK);  // OK HTTP response: status code, headers, and body
+            Facts fact = optional.get();  // value from findByID
+            fact.setLike(fact.getLike()+1); // increment value
+            repository2.save(fact);  // save entity
+            return new ResponseEntity<>(fact, HttpStatus.OK);  // OK HTTP response: status code, headers, and body
         }
         // Bad ID
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);  // Failed HTTP response: status code, headers, and body
@@ -50,13 +50,13 @@ public class JokesApiController {
     /* Update Jeer
      */
     @PutMapping("/jeer/{id}")
-    public ResponseEntity<Jokes> setJeer(@PathVariable long id) {
-        Optional<Jokes> optional = repository.findById(id);
+    public ResponseEntity<Facts> setJeer(@PathVariable long id) {
+        Optional<Facts> optional = repository2.findById(id);
         if (optional.isPresent()) {  // Good ID
-            Jokes joke = optional.get();
-            joke.setBoohoo(joke.getBoohoo()+1);
-            repository.save(joke);
-            return new ResponseEntity<>(joke, HttpStatus.OK);
+            Facts fact = optional.get();
+            fact.setDislike(fact.getDislike()+1);
+            repository2.save(fact);
+            return new ResponseEntity<>(fact, HttpStatus.OK);
         }
         // Bad ID
         return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
