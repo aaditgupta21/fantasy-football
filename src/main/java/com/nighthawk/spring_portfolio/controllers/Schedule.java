@@ -41,14 +41,3 @@ HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpRes
 
     }
 }
-
-// HttpRequest request = HttpRequest.newBuilder()
-// .uri(URI.create("https://nfl-schedule.p.rapidapi.com/v1/schedules"))
-// .header("X-RapidAPI-Key",
-// "2deba3c7c5msh59e591f91803406p14659ajsn14474595701e")
-// .header("X-RapidAPI-Host", "nfl-schedule.p.rapidapi.com")
-// .method("GET", HttpRequest.BodyPublishers.noBody())
-// .build();
-// HttpResponse<String> response = HttpClient.newHttpClient().send(request,
-// HttpResponse.BodyHandlers.ofString());
-// System.out.println(response.body());
