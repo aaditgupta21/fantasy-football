@@ -14,14 +14,14 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 @RestController // annotation to create a RESTful web services
-@RequestMapping("/api/news") // prefix of API
+@RequestMapping("/api") // prefix of API
 public class News {
     private JSONObject body; // last run result
     private HttpStatus status; // last run status
     String last_run = null; // last run day of month
 
     // GET Covid 19 Stats
-    @GetMapping("/today") // added to end of prefix as endpoint
+    @GetMapping("/news") // added to end of prefix as endpoint
     public ResponseEntity<JSONObject> getNews() {
 
         // calls API once a day, sets body and status properties

@@ -1,43 +1,63 @@
 package com.nighthawk.spring_portfolio.controllers;
 
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.json.simple.parser.ParseException;
-
-import org.springframework.ui.Model;
-import org.json.simple.JSONObject;
-import org.json.simple.parser.JSONParser;
-
-import java.io.IOException;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
+import java.util.Date;
+import java.util.HashMap;
 
-@Controller // HTTP requests are handled as a controller, using the @Controller annotation
+import org.json.simple.JSONObject;
+import org.json.simple.parser.JSONParser;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+
+@RestController // annotation to create a RESTful web services
+@RequestMapping("/api") // prefix of API
 public class Schedule {
+    private JSONObject body; // last run result
+    private HttpStatus status; // last run status
+    String last_run = null; // last run day of month
 
-    // CONTROLLER handles GET request for /birds, maps it to birds() method
-    @GetMapping("/schedule")
-    public String schedule(Model model) throws IOException, InterruptedException, ParseException {
-        HttpRequest request = HttpRequest.newBuilder()
-		.uri(URI.create("https://nfl-schedule.p.rapidapi.com/v1/schedules"))
-		.header("X-RapidAPI-Key", "2deba3c7c5msh59e591f91803406p14659ajsn14474595701e")
-		.header("X-RapidAPI-Host", "nfl-schedule.p.rapidapi.com")
-		.method("GET", HttpRequest.BodyPublishers.noBody())
-		.build();
-HttpResponse<String> response = HttpClient.newHttpClient().send(request, HttpResponse.BodyHandlers.ofString());
-// System.out.println(response.body());
+    // GET Covid 19 Stats
+    @GetMapping("/schedule") // added to end of prefix as endpoint
+    public ResponseEntity<JSONObject> getSchedule() {
 
-        // alternative #2: convert response.body() to JSON object
-        Object obj = new JSONParser().parse(response.body());
-        JSONObject jObj = (JSONObject) obj;
-        System.out.println(jObj);
+        // calls API once a day, sets body and status properties
+        String today = new Date().toString().substring(0, 10);
+        if (last_run == null || !today.equals(last_run)) {
+            try { // APIs can fail (ie Internet or Service down)
 
-        // pass stats to view
-        model.addAttribute("jObj", jObj);
+                // RapidAPI header
+                HttpRequest request = HttpRequest.newBuilder()
+                        .uri(URI.create(
+                                "https://nfl-schedule.p.rapidapi.com/v1/schedules"))
+                        .header("X-RapidAPI-Key", "2deba3c7c5msh59e591f91803406p14659ajsn14474595701e")
+                        .header("X-RapidAPI-Host", "nfl-schedule.p.rapidapi.com")
+                        .method("GET", HttpRequest.BodyPublishers.noBody())
+                        .build();
 
-        return "schedule";
+                // RapidAPI request and response
+                HttpResponse<String> response = HttpClient.newHttpClient().send(request,
+                        HttpResponse.BodyHandlers.ofString());
 
+                // JSONParser extracts text body and parses to JSONObject
+                this.body = (JSONObject) new JSONParser().parse(response.body());
+                this.status = HttpStatus.OK; // 200 success
+                this.last_run = today;
+            } catch (Exception e) { // capture failure info
+                HashMap<String, String> status = new HashMap<>();
+                status.put("status", "RapidApi failure: " + e);
+
+                // Setup object for error
+                this.body = (JSONObject) status;
+                this.status = HttpStatus.INTERNAL_SERVER_ERROR; // 500 error
+                this.last_run = null;
+            }
+        }
+
+        // return JSONObject in RESTful style
+        return new ResponseEntity<>(body, status);
     }
 }
