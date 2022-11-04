@@ -20,7 +20,7 @@ public class News {
     private HttpStatus status; // last run status
     String last_run = null; // last run day of month
 
-    // GET Covid 19 Stats
+    // GET Football news
     @GetMapping("/news") // added to end of prefix as endpoint
     public ResponseEntity<JSONObject> getNews() {
 

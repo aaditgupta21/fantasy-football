@@ -20,7 +20,7 @@ public class Schedule {
     private HttpStatus status; // last run status
     String last_run = null; // last run day of month
 
-    // GET schedule Stats
+    // GET Covid 19 Stats
     @GetMapping("/schedule") // added to end of prefix as endpoint
     public ResponseEntity<JSONObject> getSchedule() {
 

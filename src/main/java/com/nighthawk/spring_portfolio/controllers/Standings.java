@@ -20,7 +20,7 @@ public class Standings {
     private HttpStatus status; // last run status
     String last_run = null; // last run day of month
 
-    // GET Covid 19 Stats
+    // GET standings data
     @GetMapping("/standings") // added to end of prefix as endpoint
     public ResponseEntity<JSONObject> getStandings() {
 
